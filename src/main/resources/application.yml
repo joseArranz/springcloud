@@ -1,0 +1,13 @@
+#spring:
+#  data:
+#    mongodb:
+#      authentication-database: admin
+#      username: admin
+#      password: admin
+#      database: prueba
+#      port: 27017
+#      host: localhost
+spring:
+  data:
+    mongodb:
+      uri: mongodb://${app.mongo.user}:${app.mongo.pass}@${app.mongo.host}:${app.mongo.port}/${app.mongo.schema}
